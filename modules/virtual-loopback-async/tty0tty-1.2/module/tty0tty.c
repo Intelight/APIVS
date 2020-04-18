@@ -38,6 +38,7 @@
 #include <linux/tty_flip.h>
 #include <linux/serial.h>
 #include <linux/sched.h>
+#include <linux/sched/signal.h>
 #include <asm/uaccess.h>
 
 

@@ -40,6 +40,7 @@
  */
 #include	<stdio.h>		// STD I/O Definitions
 #include	<stdint.h>		// STD IEEE Type Definitions - int16_t, uint8_t, etc.
+#include <pthread.h>
 // #include	<unistd.h>		// STD Unix Definitions 
 // #include	<stdlib.h>		// STD Library Definitions
 // #include	<string.h>		// STD String Definitions

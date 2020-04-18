@@ -36,6 +36,7 @@
 #include <linux/slab.h>
 #include <linux/wait.h>
 #include <linux/sched.h>
+#include <linux/sched/signal.h>
 #include <asm/uaccess.h>
 #include <linux/kfifo.h>
 #include <linux/poll.h>
