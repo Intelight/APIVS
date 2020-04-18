@@ -5,13 +5,13 @@ INCDIR=include
 BINDIR=bin
 DOCDIR=doc
 #LINUXINCDIR=/usr/include/linux
-LOCALINCDIR=/usr/local/include
+#LOCALINCDIR=/usr/local/include
 FIOINCDIR=$(BSPDIR)/usr/include
 FPUIINCDIR=$(BSPDIR)/usr/include
 TODINCDIR=$(BSPDIR)/usr/include
 VT100INCDIR=include
 EMFIOINCDIR=include
-LOCALLIBDIR=/usr/local/lib
+#LOCALLIBDIR=/usr/local/lib
 #EXPATLIBDIR=../lib/libexpat/lib/$(ARCH)
 VT100LIBDIR=lib
 FIOLIBDIR=$(BSPDIR)/usr/lib
@@ -27,7 +27,7 @@ INCLUDES= $(INCDIR)/vse_stnd.h $(INCDIR)/vse.h $(INCDIR)/outputXML.h $(INCDIR)/i
 
 TARGET=   $(BINDIR)/vse
 
-CFLAGS= -std=gnu99 -g -O2 -Wall -fPIC -I$(SRCDIR) -I$(INCDIR) -I$(LOCALINCDIR) -I$(VT100INCDIR) -I$(FIOINCDIR) -I$(EMFIOINCDIR) -I$(FPUIINCDIR) -I$(TODINCDIR)
+CFLAGS= -std=gnu99 -g -O2 -Wall -fPIC -I$(SRCDIR) -I$(INCDIR) -I$(VT100INCDIR) -I$(FIOINCDIR) -I$(EMFIOINCDIR) -I$(FPUIINCDIR) -I$(TODINCDIR)
 LDFLAGS= -L$(LIBDIR) -L$(BSPDIR)/usr/lib -lexpat -lvt100 -lpthread -lemfio -lfio -lfpui -ltod #-lfiostub.$(ARCH) -lfpuistub.$(ARCH) -ltodstub.$(ARCH)
 CC= $(CROSS_COMPILE)gcc
 RANLIB= $(CROSS_COMPILE)ranlib
